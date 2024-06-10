@@ -1,0 +1,166 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+}
+
+.about-me {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.profile img.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.info {
+    flex: 2;
+}
+
+.info h2 {
+    margin-top: 0;
+}
+
+.info p {
+    margin: 0 0 20px 0;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.detail {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.detail h3 {
+    margin: 0 0 5px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.detail p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.work-experience {
+    margin-top: 40px;
+}
+
+.work-experience h2 {
+    margin-bottom: 20px;
+}
+
+.job {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    height: 50px;  /* Set a fixed height for TVA logo */
+    width: auto;   /* Maintain aspect ratio */
+    margin-right: 20px;
+}
+
+.company-logo-lee {
+    height: 140px;  /* Set a larger height for Lee University logo */
+    width: auto;   /* Maintain aspect ratio */
+    margin-right: 20px;
+    margin-left: -18px;
+}
+
+.job-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.job-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.job-info span {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.job-info.tva {
+    padding-left: 100px;  /* Add padding to move the TVA text to the right */
+}
+
+.job-info.lee {
+    padding-left: 134px;  /* Add padding to move the Lee text further to the right */
+}

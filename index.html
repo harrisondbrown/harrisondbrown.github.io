@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Brown Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Harrison Brown</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('about-me')">About Me</a></li>
+                <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me" class="content-section">
+            <div class="about-me">
+                <div class="profile">
+                    <img src="images/profile.png" alt="Harrison Brown Avatar" class="profile-image">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/harrison-brown-937ba4235/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="https://github.com/harrisondbrown" target="_blank"><img src="images/github-icon.png" alt="GitHub"></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h2>About Me</h2>
+                    <p>Hi there! I am a student at Lee University working on my B.S. in Computer Information Systems. 
+                        My interests are Data Engineering, Cybersecurity, and Software Development.
+                        You can also find more information about me down below!</p>
+                    <div class="details">
+                        <div class="detail coding">
+                            <h3>Coding</h3>
+                            <p>SQL, Python, HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="detail technologies">
+                            <h3>Technologies</h3>
+                            <p>Django, Flask, Node.js, React, MySQL, Git</p>
+                        </div>
+                        <div class="detail design">
+                            <h3>Design</h3>
+                            <p>Adobe [Animate, Photoshop, InDesign, After Effects]</p>
+                        </div>
+                        <div class="detail certifications">
+                            <h3>Certifications/Awards</h3>
+                            <p>GIAC Cybersecurity Fundamentals, CompTIA A+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="work-experience">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <img src="images/tva-logo.png" alt="TVA" class="company-logo">
+                    <div class="job-info tva">
+                        <h3>Data Engineering Intern</h3>
+                        <span>Jan 2024 - Present</span>
+                    </div>
+                </div>
+                <div class="job">
+                    <img src="images/lee-logo.png" alt="Lee University" class="company-logo-lee">
+                    <div class="job-info lee">
+                        <h3>Help Desk Intern</h3>
+                        <span>Aug 2022 - Present</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="resume" class="content-section" style="display:none;">
+            <h2>Resume</h2>
+            <iframe src="path/to/your/resume.pdf" width="100%" height="600px"></iframe>
+        </section>
+
+        <section id="contact" class="content-section" style="display:none;">
+            <h2>Contact</h2>
+            <p>Email: harrison.brown@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/harrison-brown-937ba4235/" target="_blank">Harrison Brown</a></p>
+            <p>GitHub: <a href="https://github.com/harrisondbrown" target="_blank">harrisondbrown</a></p>
+        </section>
+
+        <section id="projects" class="content-section" style="display:none;">
+            <h2>Projects</h2>
+            <!-- Add your projects here -->
+        </section>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
