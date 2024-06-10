@@ -164,3 +164,50 @@ main {
 .job-info.lee {
     padding-left: 134px;  /* Add padding to move the Lee text further to the right */
 }
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        margin-right: 0;
+    }
+
+    .profile img.profile-image {
+        width: 150px;
+        height: 200px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .job {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-logo,
+    .company-logo-lee {
+        height: 50px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .job-info {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .job-info.tva,
+    .job-info.lee {
+        padding-left: 0;
+    }
+}
